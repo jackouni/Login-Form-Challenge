@@ -36,36 +36,44 @@ main {
     height: 100vh;
 }
 
+
 /* --- IMAGE SECTION --- */
 
 #backdrop-img {
     position: absolute;
 }
 
-span {
-    display: flex;
+#logo-banner * {
+    margin:0;
+}
+
+#logo-banner {
     position: relative;
-    top: 30%;
-    background-color: rgba(0, 0, 0, 0.364);
-    padding: 20px;
-    font-family: Norse-bold;
-    height: 10%;
+    top: 18.75%;
     width: 100%;
-
-    color: white;
+    height: 10vw;
+    background-color: black;
 }
 
-img {
-    max-width: 20%;
-    margin-left:10%;
-    bottom: 5%;
-}
+    #logos-img-container {
+        display: flex;
+        padding-left: 1vw;
+        align-items: center;
+        color: white;
+        height: 100%;
+        width: 20%;
+    }
 
-span > p {
-    font-size: 5.5rem;
-    margin: 0;
-    margin-left: 33%;
-}
+    #odin-img {
+        height: 10vw;
+    }
+
+    #odin-text {
+        font-family: Norse-Bold;
+        font-size: 8vw;
+        width: fit-content;
+        height: fit-content;
+    }
 
 
 
@@ -140,7 +148,7 @@ span > p {
     z-index: 1;
     height: 35%;
     padding-left: 10%;
-    padding-top: 3%;
+    padding-top: max(3%, 24px);
     background-color: var(--gray-card-color);
 }
 
