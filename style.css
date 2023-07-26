@@ -17,6 +17,7 @@ body {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 100vw;
 }
@@ -81,6 +82,10 @@ span > p {
     z-index: 3;
 }
 
+#top-section > h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
 
 /* --- FORM SECTION --- */
 
@@ -95,7 +100,7 @@ span > p {
     z-index: 2;
 }
 
-    h3 {
+    #form-section > h3 {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
     }
@@ -140,23 +145,24 @@ span > p {
 }
 
 button {
-    font-size: 1em;
+    font-size: clamp(0.5rem, 100%, 20px );
     color: white;
     background-color:rgba(64,44,112,255);
     border: none;
     border-radius: var(--border-radius);
-    padding: 15px;
-    width: 23%;
-    height: fit-content;
+    padding: min(1vw, 90%);
+    width: max(150px,23%);
+    height: max(74px, fit-content);
     transition: 0.5s;
 }
+
 
 button:hover {
     box-shadow: 0px 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.276);;
 }
 
 h4 {
-    font-size: 0.9em;
+    font-size:1rem;
 }
 
 
